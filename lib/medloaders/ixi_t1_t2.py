@@ -48,6 +48,7 @@ class IXIMRIdataset(Dataset):
             utils.make_dirs(self.sub_vol_path)
         print(self.pathT1)
         self.list_IDsT1 = sorted(glob.glob(os.path.join(self.pathT1, '*T1.nii.gz')))
+        print(list_IDsT1)
         self.list_IDsT2 = sorted(glob.glob(os.path.join(self.pathT2, '*T2.nii.gz')))
         self.affine = img_loader.load_affine_matrix(self.list_IDsT1[0])
         self.create_input_data()
