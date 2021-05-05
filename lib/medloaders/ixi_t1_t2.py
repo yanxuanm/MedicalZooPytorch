@@ -15,7 +15,7 @@ class IXIMRIdataset(Dataset):
     This loader is implemented for cross-dataset testing
     """
 
-    def __init__(self, args, dataset_path='./data', voxels_space=(2, 2, 2), modalities=2, to_canonical=False,
+    def __init__(self, args, dataset_path='./data', voxels_space=(2, 2, 2), modalities=1, to_canonical=False,
                  save=True):
         """
         :param dataset_path: the extracted path that contains the desired images
